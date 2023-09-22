@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+*
+{
+    margin: none;
+    padding:none;
+    box-sizing:content-box;
+    font-family: 'Merriweather';
+    font-size: 25px;
+    
+
+
+}
+
+body
+{
+    margin-top: 30px;
+   display:grid;
+    align-items: center;
+    justify-items: center;
+background-image: linear-gradient(to bottom, #060608,#08062c,#07032b,#0a014e);
+    /*background-image: url(GeneralSocity.png);*/
+    background-position: center;
+    background-size:cover ;
+    min-height: auto;
+}
+
+.calculator
+{
+    position:relative;
+    display: grid;
+  /*  background-color: rgb(42, 104, 170);*/
+    border-radius: 14.5px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    background-size: auto;
+   
+}
+
+.calculator .value
+{
+    grid-column: span 4;
+    height: 100px;
+    padding: 20px;
+    width: 280px;
+    font-size: 35px;
+    text-align:right;
+    border-color: rgb(3, 23, 134);
+    border-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-width: 2px;
+    outline:none;
+    background-color: #4f595e ;
+    
+ 
+}
+
+.calculator span
+{
+    display: grid;
+     width: 68px;
+     height: 67px;
+     border-radius: 7px;
+     margin: 2.5px;
+     color: #fff;
+     background: #0c2835;
+     place-items: center;
+     border: 2px solid rgba(4, 106, 238, 0.1);
+     cursor: pointer;
+}
+
+.calculator span:active 
+{
+    background: #78ff43;
+    color: rgb(248, 244, 244);
+
+}
+
+.calculator span.clear:active
+{
+  grid-column: span 1;
+  width:120 px;
+  background: #ffa136;
+}
+
+.calculator span.plus
+{
+    grid-row : span 3;
+    height: 218px;
+}
+
+.calculator span.equl
+{
+    grid-column : span 3;
+    width:226px;
+}
+.calculator span.equl:active
+{
+    background: #ffa136;
+    color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
